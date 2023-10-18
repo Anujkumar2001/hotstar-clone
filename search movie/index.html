@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb</title>
+    <link rel="stylesheet" href="/navbar/style.css">
+    <style>
+        #searchBox{
+            width: 40%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #searchBox input,button{
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+        input{
+            width: 60%;
+        }
+        button{
+            background-color: blue;
+            border: none;
+            color: white;
+            width: 20%;
+            border-radius: 10px;
+        }
+        
+        #loader{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #loader img{
+           width: 50px;
+        }
+
+        #movies{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(4,auto) ;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            margin-top: 50px;
+            
+        }
+
+        .movie img{
+            width:100%
+        }
+        .movie{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        #carousel{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+   }
+   #carousel img{
+    width: 100%;
+   
+   }
+    </style>
+</head>
+<body>
+
+    <!-- navbar content----------------------- -->
+    <div id="headNavbar">
+
+    </div>
+   <!-- ---------------------------------------------- -->
+
+    <!-- slide show content--------------------- -->
+   <div id="carousel">
+
+   </div>
+<!-- -------------------------------------------------- -->
+
+
+    <div id="searchBox">
+        <input type="text" placeholder="Search movie" id="movieSearchInput">
+        <button id="searchBtn">Search</button>
+    </div>
+    <div id="loader">
+        <img src="https://media3.giphy.com/media/xelHBioIJDyoSqu0z1/giphy.gif?cid=ecf05e479zt3o11ohhj6ufs5zst11t1wibkxvs009tzp1yfs&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
+    </div>
+    <div id="movies">
+     <a href=""></a>
+    </div>
+</body>
+</html>
+<script type="module" src="script.js"></script>
